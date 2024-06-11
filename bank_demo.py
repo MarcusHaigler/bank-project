@@ -9,8 +9,14 @@ import os
 balance = 100
 running = True
 
-def show_balance():
+def cls():
     os.system('cls||clear')
+
+def login():
+    input("enter ")
+
+def show_balance():  
+    cls()
 
     print(f"Current Balance: ${balance}")
     user_input = input("""Options:
@@ -27,7 +33,7 @@ def show_balance():
         home_menu()
 
 def deposit():
-    os.system('cls||clear')
+    cls()
 
     global balance
 
@@ -37,7 +43,7 @@ def deposit():
     home_menu()
 
 def withdraw():
-    os.system('cls||clear')
+    cls()
 
     global balance
     withdrawal_amount = int(input("enter amount to withdraw: "))
@@ -79,4 +85,5 @@ enter one of the following options:
         home_menu()   
 
 while running == True: 
+    cls()
     home_menu()
