@@ -1,6 +1,7 @@
 function forgotPassword() {
-    const fpasswordBtn = document.getElementById("fpassword");
-    //open forgot password page when button is pressed
+    document.getElementById("fpassword").onclick = function() {
+        window.location.replace = "forgot_password_screen/forgot_password_screen.html";
+    };
 }
 
 function invalidSubmit() {
