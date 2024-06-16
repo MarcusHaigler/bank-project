@@ -18,18 +18,22 @@
         </div>
         <div id="login-info">
             <h3>Login</h3>
-            <form action="/action_page.php">
+            <form action="/action_page.php"> <!--Placeholder for backend code-->
                 <label for="uname">username:</label><br>
-                <input type="text" id="uname" name="uname"><br>
+                <input type="text" id="uname" name="uname" required><br>
                 <label for="pword">password</label><br>
-                <input type="password" id="pword" name="pword">
+                <input type="password" id="pword" name="pword" required>
                 <br><br>
                 <input type="submit" value="submit" id="submit-button">
             </form>
         </div>
         <div id="options">
-            <button id="fpassword">forgot password</button>
-            <button id="new-user">new user</button>
+            <a href="forgot_password_screen/forgot_password_screen.html">
+                <button id="fpassword">forgot password</button>
+            </a>
+            <a href="new user page/new_user_page.html">
+                <button id="new-user">new user</button>
+            </a>
         </div>
     </body>
 </html>
